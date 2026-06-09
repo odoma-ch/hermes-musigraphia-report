@@ -28,7 +28,7 @@ Despite this limitation, even a flattened view of this kind already constitutes 
 
 ### Enriching the data from DNB
 
-Thanks to GraphChat, the following query retrieves biographical information for the 43 persons appearing more than 10 times (results [here](./data/Iwts5i.csv)):
+As Quagga agent does not (yet) support federated queries, a temporary workaround is to use a second agent – [GraphChat](https://graphchat.ai/), which happens to provide access to DNB data – to resolve GND identifiers and get additional data from DNB. The following query retrieves biographical information for the 43 persons appearing more than 10 times (results [here](./data/Iwts5i.csv)):
 
 ```sparql
 PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
@@ -144,6 +144,12 @@ This contrast is well illustrated by an exchange with Claude Opus 4.8, prompted 
 
 > One caveat worth flagging for your purposes: I haven't been able to confirm *specific* documented Kotzebue performances at Detmold with dates from these searches. The digitization project covering the Detmold Hoftheater (1825–1875) — the TEI/MEI source-cataloguing effort run through the Lippische Landesbibliothek — would be the place where individual *Theaterzettel* (playbills) and performance materials are indexed. If you want, I can dig into that project's catalogue or spielplan data to see whether specific Kotzebue stagings are recorded. Would that be useful?
 
-The response is instructive on two counts. First, it confirms that the model has no direct access to the collection-level facts that CKG encodes: it cannot verify Kotzebue's actual presence in the Detmold repertoire and is reduced to historical inference and a request to "dig into" a digitisation project that CKG already indexes. Second, the response itself — historically grounded, methodologically careful, appropriately hedged — demonstrates what a well-informed LLM *can* contribute when CKG provides the structured anchor: contextualisation, interpretation, and the identification of meaningful patterns in data that the graph alone cannot explain.
+The response is instructive on two counts. First, it confirms that the model has no direct access to the collection-level facts that CKG encodes: it cannot verify Kotzebue's actual presence in the Detmold repertoire and is reduced to historical inference and a request to "dig into" a digitisation project that CKG already indexes. Second, the response itself demonstrates what a well-informed LLM *can* contribute when CKG provides the structured anchor: contextualisation, interpretation, and the identification of meaningful patterns in data that the graph alone can hardly explain.
 
 This complementarity is arguably the most productive framing for CKG–LLM integration: the graph supplies the collection fingerprint; the model supplies the interpretive layer.
+
+### Possible next steps:
+
+- Look for additional information about this specific collection in CKG (e.g. sources from RISM)
+- Create a small interactive data visualisation of information about this sollection
+- Retrieve the count of publications about August von Kotzebue from DNB, to see whether there is a growing interest in this figure in recent times, as the dates of publications in GoTriple seem to suggest.
