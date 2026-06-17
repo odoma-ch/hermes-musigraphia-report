@@ -19,7 +19,7 @@ could you make a visualization with a map of these venues using HTML/CSS/JS?
 
 - **Resulting PDF:** `🎭 CKG Venues Wikidata.pdf`
 - **Result link:** https://quagga-agent.graphia-ssh.eu/s/0841ec6f-d5e0-422d-8877-51a1c018cce6
-- **Visualization image:** <img width="1453" height="880" alt="Screenshot 2026-06-17 at 14 34 14" src="https://github.com/user-attachments/assets/3a22984e-49d3-43ce-9725-3ea61dace11f" />
+- **Interactive map:** [docs/assets/visualizations/german-venues-map.html](../docs/assets/visualizations/german-venues-map.html) (also embedded in the [published exploration](https://odoma-ch.github.io/hermes-musigraphia-report/explorations/harshdeep/#exploration-2-german-performance-venues))
 
 
 ### Exploration 3: Find music compositions in DIAMM whose composers also have RISM source records in the CKG.

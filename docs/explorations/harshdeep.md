@@ -44,8 +44,22 @@ could you make a visualization with a map of these venues using HTML/CSS/JS?
 |----------|------|
 | Live conversation | [quagga-agent.graphia-ssh.eu/s/0841ec6f…](https://quagga-agent.graphia-ssh.eu/s/0841ec6f-d5e0-422d-8877-51a1c018cce6) |
 | PDF export | [ckg-venues-wikidata.pdf](../assets/pdfs/ckg-venues-wikidata.pdf) |
+| Interactive map | [Open full screen](../assets/visualizations/german-venues-map.html){ target="_blank" } |
 
-![Map of German performance venues from CKG, enriched with Wikidata coordinates](https://github.com/user-attachments/assets/3a22984e-49d3-43ce-9725-3ea61dace11f){ width="800" }
+### Interactive map
+
+Quagga Agent generated this Leaflet map from CKG venue data enriched with Wikidata coordinates. Click legend items or venue names in the sidebar to explore.
+
+<iframe
+  src="../../assets/visualizations/german-venues-map.html"
+  title="CKG performance venues in Germany"
+  width="100%"
+  height="640"
+  style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; display: block;"
+  loading="lazy">
+</iframe>
+
+[Open map in full screen](../assets/visualizations/german-venues-map.html){ .md-button .md-button--primary target="_blank" }
 
 ---
 

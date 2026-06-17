@@ -16,4 +16,4 @@
   - Compose SPARQL SERVICE federated queries accordingly, turning the single-KG query flow into a seamless multi-source exploration behind a single conversational interface.
 - **Visualization**: Add more relevant tools for result visualization (e.g., performance timelines, geographic maps, network graphs) to the OpenWebUI interface.
 
-An early visualization example — a map of German performance venues enriched with Wikidata coordinates — is documented in the [venues case study](../explorations/harshdeep.md#exploration-2-german-performance-venues).
+An early visualization example — an interactive map of German performance venues enriched with Wikidata coordinates — is documented in the [venues case study](../explorations/harshdeep.md#interactive-map).
