@@ -1,0 +1,82 @@
+site_name: MusiGraphia
+site_description: >-
+  Technical report and explorations for the HERMES Data Challenge 2026 —
+  an AI-driven tool for musicological data in the Culture Knowledge Graph.
+site_url: https://odoma-ch.github.io/hermes-musigraphia-report/
+repo_url: https://github.com/odoma-ch/hermes-musigraphia-report
+repo_name: odoma-ch/hermes-musigraphia-report
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Report:
+      - technical-report/index.md
+      - Introduction: technical-report/introduction.md
+      - Problem: technical-report/problem-statement.md
+      - Architecture: technical-report/architecture.md
+      - Approach: technical-report/technical-approach.md
+      - Musicology: technical-report/musicological-adequacy.md
+      - User experience: technical-report/user-experience.md
+      - Transparency: technical-report/scientific-transparency.md
+      - Limitations: technical-report/limitations.md
+  - Explorations:
+      - explorations/index.md
+      - Harshdeep Singh: explorations/harshdeep.md
+      - Detmolder Hoftheater: explorations/detmolder-hoftheater.md
+  - Team: team.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/odoma-ch/hermes-musigraphia-report
+
+copyright: Copyright &copy; 2026 Team MusiGraphia

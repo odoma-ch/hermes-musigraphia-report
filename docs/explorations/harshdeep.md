@@ -1,0 +1,67 @@
+---
+title: Harshdeep Singh
+---
+
+# Case Studies — Harshdeep Singh
+
+Three multi-step explorations using Quagga Agent across the CKG, Wikidata, DNB, and DIAMM. Each exploration includes the conversation prompts, a shareable link, and a PDF export.
+
+---
+
+## Exploration 1: Johann Sebastian Bach
+
+Biographical data, sources, and works across multiple knowledge graphs.
+
+**Prompts:**
+
+```
+What sources by Bach in Culture Knowledge graph exist, and what incipits do they contain?
+In Wikidata, what are Bach's life dates, image, occupations, and family relationships?
+What musical entries exist for Bach in DNB, and what are their instrumentation and key designations?
+Build a comprehensive profile of Bach spanning sources, biography, and published editions.
+```
+
+| Resource | Link |
+|----------|------|
+| Live conversation | [quagga-agent.graphia-ssh.eu/s/edfaddf0…](https://quagga-agent.graphia-ssh.eu/s/edfaddf0-62df-45a3-81c1-8ba4ab20b717) |
+| PDF export | [bach-sources-and-incipits.pdf](../assets/pdfs/bach-sources-and-incipits.pdf) |
+
+---
+
+## Exploration 2: German Performance Venues
+
+CKG performance venues in Germany, enriched with Wikidata coordinates and visualized on a map.
+
+**Prompts:**
+
+```
+Could you list all the performance venues in CKG which are in Germany
+For these venues, retrieve their coordinates from Wikidata
+could you make a visualization with a map of these venues using HTML/CSS/JS?
+```
+
+| Resource | Link |
+|----------|------|
+| Live conversation | [quagga-agent.graphia-ssh.eu/s/0841ec6f…](https://quagga-agent.graphia-ssh.eu/s/0841ec6f-d5e0-422d-8877-51a1c018cce6) |
+| PDF export | [ckg-venues-wikidata.pdf](../assets/pdfs/ckg-venues-wikidata.pdf) |
+
+![Map of German performance venues from CKG, enriched with Wikidata coordinates](https://github.com/user-attachments/assets/3a22984e-49d3-43ce-9725-3ea61dace11f){ width="800" }
+
+---
+
+## Exploration 3: RISM Composers and DIAMM
+
+Cross-graph analysis linking RISM composer records in CKG with DIAMM composition data.
+
+**Prompts:**
+
+```
+Which RISM persons are recorded in CKG as composers, and what are their source counts?
+In the DIAMM graph, which compositions have composer links matching these same persons?
+Is there a correlation between a composer's RISM source count and their DIAMM composition count for these matched persons?
+```
+
+| Resource | Link |
+|----------|------|
+| Live conversation | [quagga-agent.graphia-ssh.eu/s/62fa3629…](https://quagga-agent.graphia-ssh.eu/s/62fa3629-0660-4a9c-98f0-1befb608600e) |
+| PDF export | [rism-composers-in-ckg.pdf](../assets/pdfs/rism-composers-in-ckg.pdf) |
