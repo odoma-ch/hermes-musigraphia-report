@@ -2,7 +2,7 @@
 
 **Submitted to:** HERMES Data Challenge 2026 — "From Notes to Nodes"
 **Team:** [Team Name]
-**Members:** Harshdeep Singh, Matteo Romanello, Polina Proutskova, Olga Velichkina
+**Members:** Harshdeep Singh, Polina Proutskova, Olga Velichkina,  Matteo Romanello
 
 ---
 
@@ -38,20 +38,20 @@ Quagga Agent follows a **multi-agent architecture** built on LangGraph state mac
 
 ```
 ┌─────────────────────────────────────────────────┐
-│              User Interface Layer                │
-│        OpenWebUI  /  OpenAI-compatible API       │
+│              User Interface Layer               │
+│        OpenWebUI  /  OpenAI-compatible API      │
 ├─────────────────────────────────────────────────┤
-│           Main Agent (LangGraph StateGraph)      │
-│  scope_checker → sparql_chat_agent → tools →     │
-│  run_sparql_subagent → force_validate → END      │
+│           Main Agent (LangGraph StateGraph)     │
+│  scope_checker → sparql_chat_agent → tools →    │
+│  run_sparql_subagent → force_validate → END     │
 ├─────────────────────────────────────────────────┤
-│         SPARQL Subagent (Two-Phase Pipeline)     │
-│  Phase 1: explore_kg (schema discovery)          │
-│  Phase 2: answer_question (query generation)     │
+│         SPARQL Subagent (Two-Phase Pipeline)    │
+│  Phase 1: explore_kg (schema discovery)         │
+│  Phase 2: answer_question (query generation)    │
 ├─────────────────────────────────────────────────┤
-│           Infrastructure Layer                    │
-│  API to get KG metadata | SPARQL Endpoints  │
-│  PostgreSQL (checkpointing) | LLM Providers       │
+│           Infrastructure Layer                  │
+│  API to get KG metadata | SPARQL Endpoints      │
+│  PostgreSQL (checkpointing) | LLM Providers     │
 └─────────────────────────────────────────────────┘
 ```
 
