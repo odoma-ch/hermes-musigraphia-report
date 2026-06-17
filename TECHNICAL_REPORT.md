@@ -106,14 +106,14 @@ The SPARQL subagent is itself a LangGraph agent with a two-phase pipeline:
 
 ### 3.4 Tool Arsenal
 
-| Tool | File | Purpose |
-|------|------|---------|
-| `scope_checker_tool` | `tools.py:154` | Classifies user questions against known KGs using a structured-output LLM, fetches KG metadata |
-| `run_sparql_subagent_tool` | `tools.py:480` | Delegates to the two-phase SPARQL subagent |
-| `validate_sparql_tool` | `tools.py:579` | Extracts SPARQL from subagent response, formats for display |
-| `RunSPARQLTool` | `tools.py:504` | Direct SPARQL query execution against the endpoint |
-| `describe_knowledge_graphs_tool` | `tools.py:468` | Lists available KGs with descriptions |
-| MCP tools (dynamic) | `mcp_client.py:133` | GoTriple scholarly search tools (publications, authors, projects) |
+| Tool | Purpose |
+|------|---------|
+| `scope_checker_tool` | Classifies user questions against known KGs using a structured-output LLM, fetches KG metadata |
+| `run_sparql_subagent_tool` | Delegates to the two-phase SPARQL subagent |
+| `validate_sparql_tool` | Extracts SPARQL from subagent response, formats for display |
+| `RunSPARQLTool` | Direct SPARQL query execution against the endpoint |
+| `describe_knowledge_graphs_tool` | Lists available KGs with descriptions |
+| MCP tools (dynamic) | GoTriple scholarly search tools (publications, authors, projects) |
 
 ---
 
@@ -179,15 +179,15 @@ Quagga Agent is designed to address authentic musicological research questions. 
 | Person-institution networks | NFDIcore | `NFDI_0000004` (Person), `NFDI_0000003` (Organisation), `schema:member` |
 | Geographic studies | All sources | `NFDI_0000005` (Place), `schema:geo`, `schema:latitude/longitude` |
 
-### 5.2 Example Musicological Queries
+### 5.2 Example User Queries
 
 The agent can handle questions such as:
 
-- *"Which works by Mozart have incipits in B-flat major stored in RISM?"*
+- *"Retrieve the Plaine & Easie notation strings and tonal centers for all music incipits that feature a C-4 clef and a 3/4 time signature."*
 - *"List all performances at the Kulturpalast Dresden between 1980 and 1990."*
 - *"What are the most common instruments in Detmolder Hoftheater performances?"*
-- *"Which RISM institutions hold sources by J.S. Bach?"*
-- *"How many musical sources in the CKG are autographs vs. copies?"*
+- *"List persons with profession/role links to musicology in CKG"*
+- *"Which RISM institutions are most frequently referenced as holding musical source manifestations in the knowledge graph, ranked by the number of holdings?"*
 
 The CKG exploration report's relationship patterns reveal that `NFDI_0001006` serves as the primary **cross-KG alignment mechanism**—linking CKG entities to Wikidata, ROR, GND, and other authority records. This enables entity resolution across data silos.
 
@@ -216,9 +216,9 @@ The `QuaggaProgressPipe` OpenWebUI filter (`filters/progress_pipe.py`) translate
 
 The agent maintains conversation state via **PostgreSQL-backed checkpointing** (AsyncPostgresSaver). Follow-up questions inherit context from previous turns—the subagent receives formatted parent context including prior questions, answers, and SPARQL queries. This enables natural research workflows like:
 
-> **User:** What performances are in the CKG?
-> **Agent:** *[lists performances]*
-> **User:** How many of those were in Dresden?
+> **User:** Are there any Russian operas in the graph? Which ones?
+> **Agent:** *[lists operas]*
+> **User:** Romeo and Julia by Tchaikovsky? What's that? 1812 Ouvertuere - from which work is it?
 > **Agent:** *[refines query based on previous context]*
 
 ---
@@ -230,6 +230,8 @@ A key requirement of the challenge is scientific transparency. Quagga Agent addr
 ### 7.1 SPARQL Query Exposure
 
 Every answer includes the exact SPARQL query used, with all prefixes, formatting, and whitespace preserved. The `validate_sparql_tool` extracts the query from the subagent response and presents it alongside the natural-language answer.
+
+Also since we use OpenWebUI, we can export the conversation using a web link for other users of the Quagga-Agent or for wider use using a PDF or JSON file export.
 
 ### 7.2 Tool Call Visibility
 
@@ -252,6 +254,9 @@ The CKG uses `NFDI_0001006` (external identifier) to link entities to Wikidata, 
 - **Exploration cost**: First-time KG exploration (before caching) can require 15-30 SPARQL queries and take 2-5 minutes. Subsequent queries benefit from the cached report.
 - **Result size limits**: The `RunSPARQLTool` caps results at 50 rows to avoid endpoint timeouts, which may truncate very large result sets.
 - **Language bias**: The CKG's labels are predominantly German and English; the agent's effectiveness depends on the LLM's multilingual capabilities.
+- **Unsupported external knowledge**: The agent often inserted "helpful" information not contained in the graph. These statements appeared to be correct in roughly most of the cases checked, which made their reliability difficult to predict.
+- **Data limitations**: Some graphs contain only flat metadata, and some underlying datasets include errors.
+- **Retrieval failures**: Queries sometimes timed out or failed silently. For example, when the agent searched across multiple subgraphs and MusicBrainz or Wikidata in LinkedMusic timed out, hits from other subgraphs could make it appear as though MusicBrainz contained no relevant information.
 
 ### 12.2 Planned Enhancements
 
