@@ -1,7 +1,9 @@
 # Technical Report: Quagga Agent — An AI-Driven Exploration Tool for Musicological Data in the Culture Knowledge Graph
 
 **Submitted to:** HERMES Data Challenge 2026 — "From Notes to Nodes"
-**Team:** [Team Name]
+
+**Team:** MusiGraphia
+
 **Members:** Harshdeep Singh, Polina Proutskova, Olga Velichkina,  Matteo Romanello
 
 ---
