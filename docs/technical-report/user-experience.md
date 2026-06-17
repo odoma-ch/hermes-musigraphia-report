@@ -26,4 +26,4 @@ The agent maintains conversation state via **PostgreSQL-backed checkpointing** (
 > **User:** Romeo and Julia by Tchaikovsky? What's that? 1812 Ouvertuere - from which work is it?
 > **Agent:** *[refines query based on previous context]*
 
-A full multi-turn example is available in [this Quagga conversation](https://quagga-agent.graphia-ssh.eu/s/0ce0e13d-1ccf-4698-9c4e-ca97149e1d74).
+A full multi-turn example is available in [this Quagga conversation](https://quagga-agent.graphia-ssh.eu/s/0ce0e13d-1ccf-4698-9c4e-ca97149e1d74); see also [Russian operas and ballets](../explorations/polina.md#exploration-2-russian-operas-and-ballets) for a critical assessment of similar queries.

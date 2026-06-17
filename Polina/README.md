@@ -1,3 +1,5 @@
+> **Published version:** [Polina Proutskova — Explorations](../docs/explorations/polina.md) in the MkDocs site.
+
 ## Exploration: A Cappella Dance Songs
 
 This exploration uses the Global Jukebox (GJB) dataset to test an ethnomusicological hypothesis about the rarity of a cappella dance songs worldwide — see [this conversation](https://quagga-agent.graphia-ssh.eu/s/d1137806-d47a-4e7b-ba95-0f4abd0bcc08) with Quagga agent.

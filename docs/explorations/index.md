@@ -9,4 +9,5 @@ Musicological case studies produced with Quagga Agent during the HERMES challeng
 | Study | Author | Focus |
 |-------|--------|-------|
 | [Harshdeep Singh](harshdeep.md) | Harshdeep Singh | Bach sources, German venues, RISM/DIAMM |
+| [Polina Proutskova](polina.md) | Polina Proutskova | A cappella dance songs, Russian operas, *Barbara Allen* |
 | [Detmolder Hoftheater](detmolder-hoftheater.md) | Matteo Romanello | Court theatre repertoire 1825–1875 |

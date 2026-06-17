@@ -51,7 +51,7 @@ mkdocs.yml             Site configuration
 requirements.txt       Python dependencies
 ```
 
-Legacy source files (`TECHNICAL_REPORT.md`, `Harshdeep/`, `Matteo/`, `data/`) remain in the repo root for reference; the canonical published content lives under `docs/`.
+Legacy source files (`TECHNICAL_REPORT.md`, `Harshdeep/`, `Polina/`, `Matteo/`, `data/`) remain in the repo root for reference; the canonical published content lives under `docs/`.
 
 ### GitHub Pages setup
 

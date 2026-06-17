@@ -26,4 +26,4 @@ The agent can handle questions such as:
 
 The CKG exploration report's relationship patterns reveal that `NFDI_0001006` serves as the primary **cross-KG alignment mechanism**—linking CKG entities to Wikidata, ROR, GND, and other authority records. This enables entity resolution across data silos.
 
-See also the [case studies](../explorations/harshdeep.md) for documented examples.
+See also the [case studies](../explorations/index.md) for documented examples.
