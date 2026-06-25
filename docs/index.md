@@ -13,18 +13,18 @@ title: Home
 | **Members** | Harshdeep Singh, Polina Proutskova, Olga Velichkina, Matteo Romanello |
 | **System** | [Quagga Agent](https://quagga-agent.graphia-ssh.eu/) — LLM-powered exploration of the [Culture Knowledge Graph (CKG)](https://nfdi4culture.de/) |
 
-## Summary
+## Overview
 
-This site documents **Quagga Agent**, a conversational AI that lets musicologists explore the Culture Knowledge Graph in natural language — without writing SPARQL. The agent identifies relevant knowledge graphs, discovers their schema, generates and executes queries, and returns verified results with full scientific transparency.
+**Quagga Agent** is a conversational AI that lets musicologists query the Culture Knowledge Graph — and other music-related knowledge graphs — in plain language, without writing SPARQL. Given a research question, the agent identifies the relevant graph, discovers its schema, generates and executes SPARQL queries, validates the results, and returns a structured answer alongside the query used to produce it.
 
-Quagga Agent was developed within the EU-funded [GRAPHIA](https://graphia-ssh.eu/) project (grant 101188018) and adapted for this challenge to leverage CKG datasets including RISM, musiconn.performance, APSearch, and the Detmolder Hoftheater.
+The agent was developed within the EU-funded [GRAPHIA](https://graphia-ssh.eu/) project (grant 101188018) and adapted for this challenge to cover CKG datasets including RISM, musiconn.performance, APSearch, and the Detmolder Hoftheater.
 
-## What's in this report
+## Contents
 
-- **[Technical note](technical-report/index.md)** — architecture, approach, musicological adequacy, UX, and limitations
-- **[Explorations](explorations/index.md)** — Bach, Global Jukebox, Russian operas, Irish traditional music, Detmolder Hoftheater, and more
+- **[Technical note](technical-report/index.md)** — in-depth technical documentation of the agent: architecture, SPARQL pipeline, musicological adequacy, UX, and known limitations
+- **[Explorations](explorations/index.md)** — case studies on Bach sources, German venues, Russian operas, Irish traditional music, court theatre repertoire, and more. Team members bring complementary backgrounds spanning AI, musicology, and ethnomusicology; the explorations reflect this diversity, with research questions ranging from technical system probes to substantive musicological inquiries
 - **[Team](team.md)** — MusiGraphia team members
 
-## Try Quagga Agent
+## Try the agent
 
-The live agent is available at **[quagga-agent.graphia-ssh.eu](https://quagga-agent.graphia-ssh.eu/)**. Every answer includes the SPARQL query used, and conversations can be shared via link or exported as PDF/JSON.
+The live system is at **[quagga-agent.graphia-ssh.eu](https://quagga-agent.graphia-ssh.eu/)**. Every answer includes the SPARQL query used; conversations can be shared via link or exported as PDF/JSON.

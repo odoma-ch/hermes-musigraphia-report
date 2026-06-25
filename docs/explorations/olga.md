@@ -17,7 +17,7 @@ Three explorations testing Quagga Agent on Irish traditional music topics across
 
 The Irish folk song *Down by the Salley Gardens* is known to most
 musicians through the version arranged by Benjamin Britten on the poem
-by W. B. Yeats. I wanted to learn more about the origin of this song,
+by W. B. Yeats (see [this annex](../assets/pdfs/Down-by-the-Salley_TheSession.pdf) for additional information about this song). I wanted to learn more about the origin of this song,
 its recorded and notated versions, its sources, and its poetic texts. An
 important point is that folk songs frequently exist in many melodic and
 textual versions, and their titles do not always match. Britten chose a
