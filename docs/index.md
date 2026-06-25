@@ -21,8 +21,8 @@ Quagga Agent was developed within the EU-funded [GRAPHIA](https://graphia-ssh.eu
 
 ## What's in this report
 
-- **[Report](technical-report/index.md)** — architecture, approach, musicological adequacy, UX, and limitations
-- **[Explorations](explorations/index.md)** — Bach, Global Jukebox, Russian operas, Detmolder Hoftheater, and more
+- **[Technical note](technical-report/index.md)** — architecture, approach, musicological adequacy, UX, and limitations
+- **[Explorations](explorations/index.md)** — Bach, Global Jukebox, Russian operas, Irish traditional music, Detmolder Hoftheater, and more
 - **[Team](team.md)** — MusiGraphia team members
 
 ## Try Quagga Agent

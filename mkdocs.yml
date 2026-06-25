@@ -58,9 +58,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Report:
+  - Technical note:
       - technical-report/index.md
-      - Introduction: technical-report/introduction.md
       - Problem: technical-report/problem-statement.md
       - Architecture: technical-report/architecture.md
       - Approach: technical-report/technical-approach.md
@@ -70,9 +69,10 @@ nav:
       - Limitations: technical-report/limitations.md
   - Explorations:
       - explorations/index.md
-      - Harshdeep Singh: explorations/harshdeep.md
       - Polina Proutskova: explorations/polina.md
-      - Detmolder Hoftheater: explorations/detmolder-hoftheater.md
+      - Olga Velichkina: explorations/olga.md
+      - Harshdeep Singh: explorations/harshdeep.md
+      - Matteo Romanello: explorations/detmolder-hoftheater.md
   - Team: team.md
 
 extra:
