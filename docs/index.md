@@ -11,7 +11,7 @@ title: Home
 | **Challenge** | [HERMES Data Challenge 2026 — "From Notes to Nodes"](https://hermes.nfdi4culture.de/) |
 | **Team** | MusiGraphia |
 | **Members** | Harshdeep Singh, Polina Proutskova, Olga Velichkina, Matteo Romanello |
-| **System** | [Quagga Agent](https://quagga-agent.graphia-ssh.eu/) — LLM-powered exploration of the [Culture Knowledge Graph (CKG)](https://nfdi4culture.de/) |
+| **System** | [Quagga Agent](https://quagga.graphia-ssh.eu/agent) — LLM-powered exploration of the [Culture Knowledge Graph (CKG)](https://nfdi4culture.de/) |
 
 ## Overview
 
@@ -27,4 +27,4 @@ The agent was developed within the EU-funded [GRAPHIA](https://graphia-ssh.eu/) 
 
 ## Try the agent
 
-The live system is at **[quagga-agent.graphia-ssh.eu](https://quagga-agent.graphia-ssh.eu/)**. Every answer includes the SPARQL query used; conversations can be shared via link or exported as PDF/JSON.
+The live system is at **[quagga-agent.graphia-ssh.eu](https://quagga.graphia-ssh.eu/agent)**. Every answer includes the SPARQL query used; conversations can be shared via link or exported as PDF/JSON.
