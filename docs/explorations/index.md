@@ -4,15 +4,10 @@ title: Overview
 
 # Explorations
 
-Musicological case studies produced with Quagga Agent during the HERMES challenge. Each study includes research prompts, shareable conversation links, and exported results. They can all be explored in detail by following the links to the agent conversations mentioned in each exploration report.
+Musicological case studies produced with Quagga Agent during the HERMES challenge. Each study includes a write-up of the conversation with the agent, and a reflection on the agent's behaviour and/or the quality of results. For each exploration, we include a static export (PDF, Markdown) of the entire conversation for full transparency.
 
-???+ warning "Access to shared links"
-    The conversation links require a registered account on the agent. To sign up and access them:
-
-    1. Go to [quagga.graphia-ssh.eu/agent](https://quagga.graphia-ssh.eu/agent)
-    2. Log in with GitHub, ORCID, or OPERAS
-    3. Once signed in, you can try accessing the links to the chats mentioned in each folder
-    4. If you run into problems accessing the agent or a link, reach out to `harshdeep.singh@odoma.ch`
+???+ info "Shareable links in OpenWebUI"
+    OpenWebUI – the framework used for Quagga agent's frontend – does provide the ability of creating shareble links for individual conversations. However, we decided to create static exports of these convesartions instead of leveraging these shareable links so as to make our challenge submission self-contained and more robust for long-term archival.
 
 | Exploration | Author | Focus |
 |-------|--------|-------|

@@ -14,7 +14,7 @@ This exploration uses the Global Jukebox (GJB) dataset to test an ethnomusicolog
 
 | Resource | Link |
 |----------|------|
-| Live conversation | [quagga-agent.graphia-ssh.eu/s/d1137806…](https://quagga-agent.graphia-ssh.eu/s/d1137806-d47a-4e7b-ba95-0f4abd0bcc08) |
+| Archived conversation | [PDF export](../assets/chat-archive/Polina_chat_a-Cappella-Dance-Songs.pdf) / [Markdown export](../assets/chat-archive/Polina_chat_a-Cappella-Dance-Songs.md) | |
 
 ### Hypothesis
 
@@ -74,7 +74,7 @@ This exploration asked for Russian operas in CKG.
 
 | Resource | Link |
 |----------|------|
-| Live conversation | [quagga-agent.graphia-ssh.eu/s/2ddbd5fa…](https://quagga-agent.graphia-ssh.eu/s/2ddbd5fa-d8d7-4510-9624-2d6864a9fd0c) |
+| Archived conversation | [PDF export](../assets/chat-archive/Polina_chat_Russian-Opera.pdf) / [Markdown export](../assets/chat-archive/Polina_chat_Russian-Opera.md) | |
 
 ### The querying process
 
@@ -114,7 +114,7 @@ This exploration searched for the ballad "Barbara Allen" across LinkedMusic data
 
 | Resource | Link |
 |----------|------|
-| Live conversation | [quagga-agent.graphia-ssh.eu/s/2e3f27f7…](https://quagga-agent.graphia-ssh.eu/s/2e3f27f7-7444-4399-b1b0-c41ef0028d72) |
+| Archived conversation | [PDF export](../assets/chat-archive/Polina_chat_Barbara-Allen.pdf) / [Markdown export](../assets/chat-archive/Polina_chat_Barbara-Allen.pdf) | |
 
 ### Findings across datasets
 
