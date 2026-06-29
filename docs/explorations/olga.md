@@ -12,8 +12,7 @@ Three explorations testing Quagga Agent on Irish traditional music topics across
 
 | Resource | Link |
 |----------|------|
-| Live conversation | [TODO]() |
-| PDF export | [](../assets/pdfs/) |
+| Archived conversation | [PDF export](../assets/chat-archive/Olga_chat_Salley-Gardens.pdf) / [Markdown export](../assets/chat-archive/Olga_chat_Salley-Gardens.md) | |
 
 The Irish folk song *Down by the Salley Gardens* is known to most
 musicians through the version arranged by Benjamin Britten on the poem
@@ -103,8 +102,7 @@ this search.
 
 | Resource | Link |
 |----------|------|
-| Live conversation | [TODO]() |
-| PDF export | [](../assets/pdfs/) |
+| Archived conversation | [PDF export](../assets/chat-archive/Olga_chat_Celtic-Harp-Composers.pdf) / [Markdown export](../assets/chat-archive/Olga_chat_Celtic-Harp-Composers.md) | |
 
 The task was to identify as many sources as possible relating to the
 historical and modern repertoire of the Irish (Celtic) harp (clarsach).
