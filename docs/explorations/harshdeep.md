@@ -12,7 +12,7 @@ Three multi-step explorations using Quagga Agent across the CKG, Wikidata, DNB, 
 
 | Resource | Link |
 |----------|------|
-| Archived conversation | [PDF export](../assets/chat-archive/Harshdeep_chat_) / [Markdown export](../assets/chat-archive/Harshdeep_chat_) | |
+| Archived conversation | [PDF export](../assets/pdfs/bach-sources-and-incipits.pdf) / [Markdown export](../assets/chat-archive/Harshdeep_chat_) | |
 
 Biographical data, sources, and works across multiple knowledge graphs.
 
