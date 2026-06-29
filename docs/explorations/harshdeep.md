@@ -10,16 +10,19 @@ Three multi-step explorations using Quagga Agent across the CKG, Wikidata, DNB, 
 
 ## Exploration 1: Johann Sebastian Bach
 
+| Resource | Link |
+|----------|------|
+| Archived conversation | [PDF export](../assets/chat-archive/Harshdeep_chat_) / [Markdown export](../assets/chat-archive/Harshdeep_chat_) | |
+
 Biographical data, sources, and works across multiple knowledge graphs.
+
 
 **Prompts:**
 
-```
-What sources by Bach in Culture Knowledge graph exist, and what incipits do they contain?
-In Wikidata, what are Bach's life dates, image, occupations, and family relationships?
-What musical entries exist for Bach in DNB, and what are their instrumentation and key designations?
-Build a comprehensive profile of Bach spanning sources, biography, and published editions.
-```
+- What sources by Bach in Culture Knowledge graph exist, and what incipits do they contain?
+- In Wikidata, what are Bach's life dates, image, occupations, and family relationships?
+- What musical entries exist for Bach in DNB, and what are their instrumentation and key designations?
+- Build a comprehensive profile of Bach spanning sources, biography, and published editions.
 
 | Resource | Link |
 |----------|------|
@@ -30,15 +33,17 @@ Build a comprehensive profile of Bach spanning sources, biography, and published
 
 ## Exploration 2: German Performance Venues
 
+| Resource | Link |
+|----------|------|
+| Archived conversation | [PDF export](../assets/chat-archive/Harshdeep_chat_) / [Markdown export](../assets/chat-archive/Harshdeep_chat_) | |
+
 CKG performance venues in Germany, enriched with Wikidata coordinates and visualized on a map.
 
 **Prompts:**
 
-```
-Could you list all the performance venues in CKG which are in Germany
-For these venues, retrieve their coordinates from Wikidata
-could you make a visualization with a map of these venues using HTML/CSS/JS?
-```
+- Could you list all the performance venues in CKG which are in Germany
+- For these venues, retrieve their coordinates from Wikidata
+- Could you make a visualization with a map of these venues using HTML/CSS/JS?
 
 | Resource | Link |
 |----------|------|
@@ -67,15 +72,12 @@ Quagga Agent generated this Leaflet map from CKG venue data enriched with Wikida
 
 Cross-graph analysis linking RISM composer records in CKG with DIAMM composition data.
 
-**Prompts:**
-
-```
-Which RISM persons are recorded in CKG as composers, and what are their source counts?
-In the DIAMM graph, which compositions have composer links matching these same persons?
-Is there a correlation between a composer's RISM source count and their DIAMM composition count for these matched persons?
-```
-
 | Resource | Link |
 |----------|------|
-| Live conversation | [quagga-agent.graphia-ssh.eu/s/62fa3629…](https://quagga-agent.graphia-ssh.eu/s/62fa3629-0660-4a9c-98f0-1befb608600e) |
-| PDF export | [rism-composers-in-ckg.pdf](../assets/pdfs/rism-composers-in-ckg.pdf) |
+| Archived conversation | [PDF export](../assets/chat-archive/Harshdeep_chat_) / [Markdown export](../assets/chat-archive/Harshdeep_chat_) | |
+
+**Prompts:**
+
+- Which RISM persons are recorded in CKG as composers, and what are their source counts?
+- In the DIAMM graph, which compositions have composer links matching these same persons?
+- Is there a correlation between a composer's RISM source count and their DIAMM composition count for these matched persons?
