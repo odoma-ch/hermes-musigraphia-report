@@ -1,12 +1,15 @@
 ---
-title: Detmolder Hoftheater
+title: Matteo Romanello
 ---
 
-# Detmolder Hoftheater Repertoire (1825–1875)
+# Exploring the Detmolder Hoftheater Repertoire (1825–1875) — Matteo Romanello
 
-*By Matteo Romanello*
+This exploration focuses on the [repertoire of the Detmolder Hoftheater 1825–1875](https://nfdi4culture.de/id/E5305) as a case study for what CKG makes accessible.
 
-This exploration focuses on the [repertoire of the Detmolder Hoftheater 1825–1875](https://nfdi4culture.de/id/E5305) as a case study for what CKG makes accessible — see [this conversation](https://quagga-agent.graphia-ssh.eu/s/a29d4668-0cf6-4622-b95d-b6a326b4f16f) with Quagga Agent.
+
+| Resource | Link |
+|----------|------|
+| Archived conversation | [PDF export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.pdf) / [Markdown export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.md) | 
 
 ## Querying the collection
 
