@@ -41,3 +41,7 @@ While the CKG is the core data source, Quagga Agent's architecture supports:
 - **MCP-based tool integration**: The GoTriple MCP client (`agent_utils/mcp_client.py`) provides access to scholarly publications, authors, and projects via the Model Context Protocol at `https://gotriple.mcp.netseven.work/mcp`
 - **Multiple KG support**: The agent currently supports 7 knowledge graphs (CKG, GESIS KG, EHRI-KG, PHAROS, LinkedMusic, DNB KB, Wikidata) and can be extended to include CORAGO and MIMO
 - **SPARQL queries**: The `RunSPARQLTool` can execute queries across different endpoints and improves by itself in case its attempts fail. In short, it is a very simple self-improving harness based on its own mistakes.
+
+### GoTriple MCP Integration
+
+The GoTriple MCP client provides access to scholarly publications and authors via the Model Context Protocol at `https://gotriple.mcp.netseven.work/mcp`. With a single natural-language query, the tool can look up either authors or publications — but not both in a single call. For example, "Find author X" and "Find publication Y" are processed as separate lookup types within the same tool.

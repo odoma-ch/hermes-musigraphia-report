@@ -6,6 +6,7 @@
 - **Exploration cost**: First-time KG exploration (before caching) can require 15–30 SPARQL queries and take 2–5 minutes. Subsequent queries benefit from the cached report.
 - **Result size limits**: The `RunSPARQLTool` caps results at 50 rows to avoid endpoint timeouts, which may truncate very large result sets.
 - **Language bias**: The CKG's labels are predominantly German and English; the agent's effectiveness depends on the LLM's multilingual capabilities.
+- **GoTriple query constraints**: The GoTriple MCP integration does not support parallel tool calls for multi-author queries — retrieving publications for three authors requires three separate inputs rather than one aggregated request. Additionally, MCP tool responses are verbose (including full metadata payloads), which can consume significant context window capacity (~200K tokens at current limits), constraining conversation history retention during extended sessions.
 
 ## Planned Enhancements
 
