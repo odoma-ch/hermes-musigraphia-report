@@ -1,0 +1,248 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<style>
+								body {
+									background-color: white; /* Ensure the iframe has a white background */
+								}
+
+								
+							</style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Composers who set Kotzebue's texts to music — Top 10</title>
+<style>
+  :root {
+    --bar-color: #4a7c91;
+    --bar-hover: #6ba3ba;
+    --bg: #fafafa;
+    --text: #2c2c2c;
+    --grid: #e0e0e0;
+    --accent: #c0392b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .chart-container {
+    max-width: 860px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .bar-label {
+    width: 260px;
+    min-width: 260px;
+    text-align: right;
+    padding-right: 14px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bar-track {
+    flex: 1;
+    position: relative;
+    height: 32px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--bar-color);
+    border-radius: 4px;
+    transition: width 1.2s cubic-bezier(0.25, 0.8, 0.25, 1),
+                background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    min-width: 0;
+    cursor: default;
+  }
+
+  .bar-fill:hover {
+    background: var(--bar-hover);
+  }
+
+  .bar-fill.top-composer {
+    background: var(--accent);
+  }
+  .bar-fill.top-composer:hover {
+    background: #e74c3c;
+  }
+
+  .bar-value {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.8s;
+  }
+
+  .bar-value.visible {
+    opacity: 1;
+  }
+
+  .bar-value.outside {
+    color: var(--text);
+    padding-left: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.8s;
+  }
+
+  .bar-value.outside.visible {
+    opacity: 1;
+  }
+
+  .axis-line {
+    border-top: 1px solid var(--grid);
+    margin-left: 260px;
+    margin-top: 0.5rem;
+    padding-top: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #999;
+  }
+
+  .source-note {
+    margin-top: 1.5rem;
+    font-size: 0.78rem;
+    color: #999;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .bar-label { width: 140px; min-width: 140px; font-size: 0.78rem; }
+    .axis-line { margin-left: 140px; }
+    h1 { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="chart-container">
+  <h1>Composers who set Kotzebue's texts to music</h1>
+  <p class="subtitle">Top 10 by number of RISM sources (Kotzebue as lyricist / librettist)</p>
+  <div id="chart"></div>
+  <div class="axis-line" id="axis"></div>
+  <p class="source-note">
+    Data: RISM sources via LinkedMusic Knowledge Graph · Kotzebue linked via P655 (lyricist), P87 (librettist), P676 (lyrics) · Count = distinct sources per composer (P86)
+  </p>
+</div>
+
+<script>
+const data = [
+  { composer: "Himmel, Friedrich Heinrich (1765–1814)", count: 139 },
+  { composer: "Weber, Bernhard Anselm (1764–1821)",      count: 27  },
+  { composer: "Weber, Carl Maria von (1786–1826)",       count: 22  },
+  { composer: "Anonymus",                                 count: 21  },
+  { composer: "Beethoven, Ludwig van (1770–1827)",       count: 20  },
+  { composer: "Weigl, Joseph (1766–1846)",               count: 14  },
+  { composer: "Ritter, Peter (1763–1846)",               count: 13  },
+  { composer: "Kreutzer, Conradin (1780–1849)",          count: 10  },
+  { composer: "Kuhlau, Friedrich (1786–1832)",           count: 9   },
+  { composer: "Lindpaintner, Peter Josef von (1791–1856)", count: 6 }
+];
+
+const maxCount = Math.max(...data.map(d => d.count));
+const chart = document.getElementById("chart");
+const axis   = document.getElementById("axis");
+
+// Render bars
+data.forEach((d, i) => {
+  const pct = (d.count / maxCount) * 100;
+  const isTop = i === 0;
+
+  const row = document.createElement("div");
+  row.className = "bar-row";
+
+  const label = document.createElement("div");
+  label.className = "bar-label";
+  label.textContent = d.composer;
+  label.title = d.composer;
+
+  const track = document.createElement("div");
+  track.className = "bar-track";
+
+  const fill = document.createElement("div");
+  fill.className = "bar-fill" + (isTop ? " top-composer" : "");
+  fill.style.width = "0%";
+
+  const value = document.createElement("span");
+  value.className = "bar-value";
+  value.textContent = d.count;
+
+  fill.appendChild(value);
+  track.appendChild(fill);
+  row.appendChild(label);
+  row.appendChild(track);
+  chart.appendChild(row);
+
+  // Animate in
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      fill.style.width = pct + "%";
+      value.classList.add("visible");
+    }, i * 80);
+  });
+});
+
+// Axis ticks
+const ticks = [0, Math.round(maxCount / 4), Math.round(maxCount / 2), Math.round(3 * maxCount / 4), maxCount];
+ticks.forEach(t => {
+  const span = document.createElement("span");
+  span.textContent = t;
+  axis.appendChild(span);
+});
+</script>
+
+</body>
+</html>
+
+							<script>
+                            	
+							</script>
+                        </body>
+                        </html>
+                    

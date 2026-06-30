@@ -1,0 +1,1582 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Technical report and explorations for the HERMES Data Challenge 2026 — an AI-driven tool for musicological data in the Culture Knowledge Graph.">
+      
+      
+      
+        <link rel="canonical" href="https://odoma-ch.github.io/hermes-musigraphia-report/explorations/polina/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../olga/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Polina Proutskova - MusiGraphia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#case-studies-polina-proutskova" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MusiGraphia" class="md-header__button md-logo" aria-label="MusiGraphia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MusiGraphia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polina Proutskova
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/odoma-ch/hermes-musigraphia-report" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    odoma-ch/hermes-musigraphia-report
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../technical-report/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Technical note
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Explorations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../team/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Team
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MusiGraphia" class="md-nav__button md-logo" aria-label="MusiGraphia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MusiGraphia
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/odoma-ch/hermes-musigraphia-report" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    odoma-ch/hermes-musigraphia-report
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../technical-report/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical note
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technical note
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/problem-statement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/technical-approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Approach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/musicological-adequacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Musicology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/user-experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User experience
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/scientific-transparency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-report/limitations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explorations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Explorations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polina Proutskova
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polina Proutskova
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-1-a-cappella-dance-songs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 1: A Cappella Dance Songs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 1: A Cappella Dance Songs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypothesis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-querying-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The querying process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Findings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cultures-with-a-cappella-group-dance-songs-by-continent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cultures with a cappella group dance songs by continent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possible next steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-2-russian-operas-and-ballets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 2: Russian Operas and Ballets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 2: Russian Operas and Ballets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-querying-process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The querying process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hallucinated-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hallucinated attribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-3-barbara-allen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 3: Barbara Allen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 3: Barbara Allen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findings-across-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Findings across datasets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../olga/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Olga Velichkina
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../harshdeep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harshdeep Singh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matteo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matteo Romanello
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-1-a-cappella-dance-songs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 1: A Cappella Dance Songs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 1: A Cappella Dance Songs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypothesis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-querying-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The querying process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Findings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cultures-with-a-cappella-group-dance-songs-by-continent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cultures with a cappella group dance songs by continent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possible next steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-2-russian-operas-and-ballets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 2: Russian Operas and Ballets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 2: Russian Operas and Ballets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-querying-process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The querying process
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hallucinated-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hallucinated attribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-3-barbara-allen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploration 3: Barbara Allen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploration 3: Barbara Allen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findings-across-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Findings across datasets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="case-studies-polina-proutskova">Case Studies — Polina Proutskova<a class="headerlink" href="#case-studies-polina-proutskova" title="Permanent link">&para;</a></h1>
+<p>Three explorations using Quagga Agent across the Global Jukebox, CKG, and LinkedMusic. Each study includes a shareable conversation link and a critical assessment of the querying process.</p>
+<hr />
+<h2 id="exploration-1-a-cappella-dance-songs">Exploration 1: A Cappella Dance Songs<a class="headerlink" href="#exploration-1-a-cappella-dance-songs" title="Permanent link">&para;</a></h2>
+<p>This exploration uses the Global Jukebox (GJB) dataset to test an ethnomusicological hypothesis about the rarity of a cappella dance songs worldwide.</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archived conversation</td>
+<td><a href="../../assets/chat-archive/Polina_chat_a-Cappella-Dance-Songs.pdf">PDF export</a> / <a href="../../assets/chat-archive/Polina_chat_a-Cappella-Dance-Songs/">Markdown export</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hypothesis">Hypothesis<a class="headerlink" href="#hypothesis" title="Permanent link">&para;</a></h3>
+<p>In most cultures, people dance to instrumental music; dancing while singing a cappella is rare. The reasoning is twofold: singing and dancing simultaneously is physically demanding, so performers usually do one or the other; and dance music is highly repetitive, which is generally easier for instruments than for singers.</p>
+<p>In Eastern Europe, Russia has the <em>khorovod</em> genre — circle dances performed with a cappella singing. This genre may be connected to Ivan the Terrible's ban on instrumental music, which interrupted the instrumental tradition and created space for dance songs to develop. Neighbouring countries, despite many musical similarities, do not have comparable genres and tend to dance to instrumental tunes.</p>
+<h3 id="the-querying-process">The querying process<a class="headerlink" href="#the-querying-process" title="Permanent link">&para;</a></h3>
+<p>The investigation required substantial hand-holding, primarily due to two factors:</p>
+<ol>
+<li>
+<p><strong>Non-human-readable genre labels.</strong> The GJB dataset uses Wikidata genre IDs rather than human-readable labels. The initial search found 19 songs with no Russian songs among them, even though the dataset contains two Russian <em>khorovods</em>. After some deliberation, the agent found one of them. We then had to identify what the Wikidata genre IDs referred to and determine which were related to dance. After an extended process, we collected a list of dance-related genre labels and reran the search.</p>
+</li>
+<li>
+<p><strong>Sorting by country.</strong> Asking for the findings to be sorted or grouped by country required another extended retrieval process to collect country labels for the Wikidata IDs. The agent initially guessed many labels incorrectly. Once the country labels had been retrieved, the sorted table could be constructed.</p>
+</li>
+</ol>
+<p>Querying Wikidata was unstable throughout, and the overall process required substantial human intervention.</p>
+<h3 id="findings">Findings<a class="headerlink" href="#findings" title="Permanent link">&para;</a></h3>
+<p>The initial result was surprising: a cappella dance songs represented <strong>28% of all dance songs worldwide</strong> and <strong>47% in Europe</strong>. However, this number is biased because only cultures in which dance songs were recorded were included. This excluded traditions in which dances were performed only, or mostly, to instrumental tunes and no dance songs were recorded.</p>
+<p>The bias follows from the construction of the Lomax dataset, which focused on singing and did not include purely instrumental performances.</p>
+<p>Correcting for this bias by looking at cultures rather than songs:</p>
+<ul>
+<li>In Europe, there were 75 dance songs in total, of which 37 (almost half) were a cappella dance songs. However, across <strong>all</strong> European songs in the dataset, a cappella dance songs constituted only <strong>5.6%</strong>.</li>
+<li>Of the 148 European cultures represented in GJB, only <strong>7 (4.7%)</strong> had a cappella group dance songs — closer to the intuitive expectation of under 5%.</li>
+<li>The worldwide percentage of cultures with a cappella dance songs was <strong>6.7%</strong>.</li>
+</ul>
+<h3 id="cultures-with-a-cappella-group-dance-songs-by-continent">Cultures with a cappella group dance songs by continent<a class="headerlink" href="#cultures-with-a-cappella-group-dance-songs-by-continent" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Continent</th>
+<th style="text-align: right;">Total Cultures (any songs)</th>
+<th style="text-align: right;">A Cappella Group Dance Cultures</th>
+<th style="text-align: left;">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">9.3%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">7.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: right;">148</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">4.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">North America (incl. Caribbean)</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">South America</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">9.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Oceania</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">6.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Global total</strong></td>
+<td style="text-align: right;"><strong>870</strong></td>
+<td style="text-align: right;"><strong>58</strong></td>
+<td style="text-align: left;"><strong>6.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h3>
+<p>It produced new ethnomusicological insights and showed the potential value of this technology. The key methodological lesson is the importance of correcting for dataset bias: raw song counts dramatically overstate the prevalence of a cappella dance songs because the Lomax dataset systematically excludes purely instrumental traditions.</p>
+<h3 id="possible-next-steps">Possible next steps<a class="headerlink" href="#possible-next-steps" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Investigate the specific cultures with a cappella dance songs to identify shared characteristics</li>
+<li>Compare the Russian <em>khorovod</em> tradition with a cappella dance traditions in other continents</li>
+</ul>
+<hr />
+<h2 id="exploration-2-russian-operas-and-ballets">Exploration 2: Russian Operas and Ballets<a class="headerlink" href="#exploration-2-russian-operas-and-ballets" title="Permanent link">&para;</a></h2>
+<p>This exploration asked for Russian operas in CKG.</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archived conversation</td>
+<td><a href="../../assets/chat-archive/Polina_chat_Russian-Opera.pdf">PDF export</a> / <a href="../../assets/chat-archive/Polina_chat_Russian-Opera/">Markdown export</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-querying-process_1">The querying process<a class="headerlink" href="#the-querying-process_1" title="Permanent link">&para;</a></h3>
+<p>The CKG graph does not appear to contain a country property. The agent did not state this at first, but instead searched for examples of Russian operas that seemed to be known to the system in advance:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="nv">?work</span> <span class="nv">?label</span> <span class="k">WHERE</span> <span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="nv">?performance</span> <span class="nn">cto</span><span class="p">:</span><span class="nt">CTO_0001019</span> <span class="nv">?work</span> <span class="p">.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="nv">?work</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="nv">?label</span> <span class="p">.</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="k">FILTER</span><span class="p">(</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;boris godunov&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;onegin&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;pikovaja&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;zarenbraut&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;sadko&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;mlada&quot;</span><span class="p">)</span> <span class="o">||</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="nf">CONTAINS</span><span class="p">(</span><span class="nf">LCASE</span><span class="p">(</span><span class="nf">STR</span><span class="p">(</span><span class="nv">?label</span><span class="p">)),</span> <span class="s">&quot;leben für den czar&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  <span class="p">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
+</code></pre></div>
+<p>This was not sufficient, so I asked for more operas and for ballets. The agent returned more operas, but I do not have the SPARQL query for that step, so the retrieval method is unclear. It may have searched by composer, by Russian institutions, or through Musiconn.</p>
+<h3 id="hallucinated-attribution">Hallucinated attribution<a class="headerlink" href="#hallucinated-attribution" title="Permanent link">&para;</a></h3>
+<p>When I asked for the most popular ballet, the agent looked for the number of performances in Musiconn and returned <em>Romeo and Juliet</em> by Tchaikovsky, which does not exist. There is a <em>Romeo and Juliet</em> ballet by Prokofiev. The agent appears to have conflated Tchaikovsky's overture with Prokofiev's ballet. When prompted, it corrected itself.</p>
+<h3 id="assessment_1">Assessment<a class="headerlink" href="#assessment_1" title="Permanent link">&para;</a></h3>
+<p>Two problems emerged: the absence of a country property in CKG forced a workaround based on known work titles rather than structural queries, and the agent hallucinated an attribution by conflating two distinct works sharing the same title.</p>
+<hr />
+<h2 id="exploration-3-barbara-allen">Exploration 3: Barbara Allen<a class="headerlink" href="#exploration-3-barbara-allen" title="Permanent link">&para;</a></h2>
+<p>This exploration searched for the ballad "Barbara Allen" across LinkedMusic datasets.</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archived conversation</td>
+<td><a href="../../assets/chat-archive/Polina_chat_Barbara-Allen.pdf">PDF export</a> / <a href="../../assets/chat-archive/Polina_chat_Barbara-Allen.pdf">Markdown export</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="findings-across-datasets">Findings across datasets<a class="headerlink" href="#findings-across-datasets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The Session:</strong> one entity found, but the dataset mainly contains instrumental dance tunes and lacks data structures for songs or lyrics. Notation for two variants exists on the website but appears to be a different tune from the ballad despite sharing the title.</li>
+<li><strong>GJB:</strong> two correct songs with the correct cultures. One item was a compilation of several recordings by several performers from Aberdeen, all singing versions of the same song. It had only one song number, which the agent found, but the agent could not identify that the record represented a compilation.</li>
+<li><strong>RISM:</strong> one manuscript.</li>
+<li><strong>UTSI:</strong> 20 variants, including three Irish examples, with lyric incipits. The hope of relating variants across datasets was not realised, since The Session lacks song/lyric data structures.</li>
+<li><strong>MusicBrainz</strong> (within LinkedMusic): returned nothing, probably because of a timeout. A direct MusicBrainz search returned ~88,000 hits, of which approximately the first 450 were relevant.</li>
+<li><strong>GoTriple:</strong> the agent found several field recordings, one book chapter, one short film with the song title in the name, and several more publications described as relevant but less convincing. When checked directly, GoTriple found the field recordings and the short film, but not the book chapter. The chapter does exist and is findable through Google Scholar; GoTriple finds the book but not the chapter in it, even though "Barbara Allen" appears in the chapter title.</li>
+</ul>
+<h3 id="assessment_2">Assessment<a class="headerlink" href="#assessment_2" title="Permanent link">&para;</a></h3>
+<p>It found informative UTSI variants and relevant field recordings from GoTriple. Limitations included the inability to cross-link variants across datasets due to underlying graph structure and the agent's failure to recognise a compilation record.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Team MusiGraphia
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/odoma-ch/hermes-musigraphia-report" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
