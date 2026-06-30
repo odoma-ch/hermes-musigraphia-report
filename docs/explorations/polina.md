@@ -64,7 +64,6 @@ It produced new ethnomusicological insights and showed the potential value of th
 
 - Investigate the specific cultures with a cappella dance songs to identify shared characteristics
 - Compare the Russian *khorovod* tradition with a cappella dance traditions in other continents
-- Explore whether the dataset bias can be quantified more precisely by cross-referencing with other sources on instrumental dance traditions
 
 ---
 

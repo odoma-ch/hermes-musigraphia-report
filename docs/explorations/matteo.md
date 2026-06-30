@@ -9,7 +9,8 @@ This exploration focuses on the [repertoire of the Detmolder Hoftheater 1825–1
 
 | Resource | Link |
 |----------|------|
-| Archived conversation | [PDF export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.pdf) / [Markdown export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.md) | 
+| Archived conversation (part 1) | [PDF export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.pdf) / [Markdown export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater.md) | 
+| Archived conversation (part 2) | [PDF export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater_part2.md) / [Markdown export](../assets/chat-archive/Matteo_chat-Detmolder-hoftheater_part2.pdf) | 
 
 ## Querying the collection
 
@@ -35,78 +36,11 @@ This query also reveals a structural limitation worth keeping in mind. The CKG p
 
 Despite this limitation, even a flattened view of this kind already constitutes a meaningful *fingerprint* of the collection, as the case of August von Kotzebue illustrates below.
 
-## Enriching the data from DNB
-
-As Quagga Agent does not (yet) support federated queries, a temporary workaround is to use a second agent – [GraphChat](https://graphchat.ai/), which happens to provide access to DNB data – to resolve GND identifiers and get additional data from DNB. The following query retrieves biographical information for the 43 persons appearing more than 10 times (results [here](../assets/data/Iwts5i.csv)):
-
-```sparql
-PREFIX gndo: <https://d-nb.info/standards/elementset/gnd#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-
-SELECT ?gndId ?preferredName ?bio ?dateOfBirth ?dateOfDeath ?placeOfBirth ?placeOfDeath ?professionOrOccupation ?sameAs WHERE {
-  VALUES ?gndId {
-    <https://d-nb.info/gnd/118565796>
-    <https://d-nb.info/gnd/118612425>
-    <https://d-nb.info/gnd/100823548>
-    <https://d-nb.info/gnd/118706640>
-    <https://d-nb.info/gnd/118667424>
-    <https://d-nb.info/gnd/116207523>
-    <https://d-nb.info/gnd/116836709>
-    <https://d-nb.info/gnd/116752505>
-    <https://d-nb.info/gnd/116850310>
-    <https://d-nb.info/gnd/118610813>
-    <https://d-nb.info/gnd/116616261>
-    <https://d-nb.info/gnd/116311118>
-    <https://d-nb.info/gnd/118633716>
-    <https://d-nb.info/gnd/118555324>
-    <https://d-nb.info/gnd/100844901>
-    <https://d-nb.info/gnd/118658875>
-    <https://d-nb.info/gnd/104309040>
-    <https://d-nb.info/gnd/116686030>
-    <https://d-nb.info/gnd/118607626>
-    <https://d-nb.info/gnd/116987367>
-    <https://d-nb.info/gnd/118507400>
-    <https://d-nb.info/gnd/105607231>
-    <https://d-nb.info/gnd/116891025>
-    <https://d-nb.info/gnd/118613723>
-    <https://d-nb.info/gnd/118737775>
-    <https://d-nb.info/gnd/116989114>
-    <https://d-nb.info/gnd/116746823>
-    <https://d-nb.info/gnd/118785230>
-    <https://d-nb.info/gnd/117767360>
-    <https://d-nb.info/gnd/118574469>
-    <https://d-nb.info/gnd/118713507>
-    <https://d-nb.info/gnd/117464406>
-    <https://d-nb.info/gnd/103770617X>
-    <https://d-nb.info/gnd/118810715>
-    <https://d-nb.info/gnd/100844979>
-    <https://d-nb.info/gnd/118646192>
-    <https://d-nb.info/gnd/118528068>
-    <https://d-nb.info/gnd/116452145>
-    <https://d-nb.info/gnd/118518399>
-    <https://d-nb.info/gnd/118540238>
-    <https://d-nb.info/gnd/119106698>
-    <https://d-nb.info/gnd/104325011>
-    <https://d-nb.info/gnd/118658166>
-  }
-
-  ?gndId gndo:preferredNameForThePerson ?preferredName .
-  OPTIONAL { ?gndId gndo:dateOfBirth ?dateOfBirth . }
-  OPTIONAL { ?gndId gndo:dateOfDeath ?dateOfDeath . }
-  OPTIONAL { ?gndId gndo:placeOfBirth ?placeOfBirth . }
-  OPTIONAL { ?gndId gndo:placeOfDeath ?placeOfDeath . }
-  OPTIONAL { ?gndId gndo:professionOrOccupation ?professionOrOccupation . }
-  OPTIONAL { ?gndId owl:sameAs ?sameAs . }
-  OPTIONAL { ?gndId gndo:biographicalOrHistoricalInformation ?bio .}
-}
-ORDER BY ?gndId
-```
-
 ## August von Kotzebue: a collection fingerprint
 
 The top-ranked person in this collection is August von Kotzebue (105 associated works), followed by figures such as Ernst Raupach (46) and Ludwig Robert (73). Even without knowing the role these individuals played in relation to each work, the ranking itself is historically meaningful: Kotzebue was the dominant playwright on German-language stages in the very era the Detmold theatre was founded, and his posthumous prominence in the collection data is entirely consistent with what we know about 19th-century repertoire practice.
 
-GoTriple surfaces a substantial body of scholarship on Kotzebue, illustrating the kind of research context that can be brought to bear on this collection:
+[GoTriple](https://gotriple.eu/) surfaces a substantial body of scholarship on Kotzebue, illustrating the kind of research context that can be brought to bear on this collection:
 
 ### Blog Posts & Scholarly Blog Entries
 
@@ -137,6 +71,59 @@ GoTriple surfaces a substantial body of scholarship on Kotzebue, illustrating th
 | Von Kotzebue bis Fleming: Sprach-, Literatur- und Kulturkontakt im Baltikum | Mari Tarvas | 2024 | lang |
 | O pewnym zabójstwie na tle politycznym (on the assassination of Kotzebue) | Nina Nowara-Matusik | 2020 | hist, phil |
 
+## Recovering the roles: Kotzebue in LinkedMusic (RISM)
+
+The fingerprint above raises a natural follow-up. If CKG, by design, flattens the *nature* of the person–work relation, what does the same figure look like in a knowledge graph that preserves it? [LinkedMusic](https://virtuoso.simssa.ca/sparql) — a federation of fourteen music-specific databases (MusicBrainz, RISM, DIAMM, CantusDB and others), also accessible through the Quagga Agent — offers a useful complement, both because it covers the period in which the Detmold theatre operated and because, being domain-specific, it retains role-level vocabulary that CKG necessarily drops.
+
+After a discovery turn that lists the available KGs and a schema-introspection turn enumerating the eleven sub-graphs of LinkedMusic, the question *"is there information about August von Kotzebue (Q57242)?"* returns two records: a MusicBrainz artist node (biographical, with no associated works) and a RISM person node (`rism.online/people/34844`). Both are linked to Q57242 via `P2888`, which makes the cross-graph identity resolution explicit.
+
+Inside RISM, **410 sources** are linked to Kotzebue, distributed across four roles, each encoded as a different predicate:
+
+| Role | Predicate | Sources |
+|------|-----------|---------|
+| Lyricist | `wd:P676` | 399 |
+| Librettist | `wd:P87` | 8 |
+| Other (Quagga labels as *dedicatee*) | `wd:P655` | 2 |
+| Composer | `wd:P86` | 1 |
+
+This is exactly the level of distinction that the CKG fingerprint cannot expose. With roles preserved, the question *"who set Kotzebue's texts to music?"* becomes well-defined, and a single `GROUP BY` produces an answer:
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?composer ?composerLabel (COUNT(DISTINCT ?source) AS ?sourceCount)
+WHERE {
+  GRAPH <https://linkedmusic.ca/graphs/rism/> {
+    ?source ?p <https://rism.online/people/34844> .
+    FILTER(?p IN (wd:P655, wd:P87, wd:P676))
+    ?source wd:P86 ?composer .
+    ?composer rdfs:label ?composerLabel .
+  }
+}
+GROUP BY ?composer ?composerLabel
+ORDER BY DESC(?sourceCount)
+```
+
+The result is itself long-tailed and historically revealing. Eighty-five distinct composers set Kotzebue's texts in the RISM corpus; **Friedrich Heinrich Himmel** — a today-peripheral Berlin Kapellmeister — dominates with **139 sources**, more than the next six composers combined. He is followed by Bernhard Anselm Weber (27), Carl Maria von Weber (22), an "Anonymus" cluster (21), and Beethoven, in fifth place at 20. Forty-seven of the eighty-five composers (55%) appear only once. The shape of this distribution echoes the Detmold ranking — a small group of high-volume associations and a long tail of singletons — but its semantic content is qualitatively different: here we are reading specifically *musical* reception, not undifferentiated co-occurrence.
+
+### Interactive chart
+
+Quagga Agent generated this horizontal bar chart from the RISM query results above, showing the top ten composers by source count for musical settings of Kotzebue's texts.
+
+<iframe
+  src="../../assets/visualizations/artifact-24ec0466-26bd-405f-82bd-1da4c6019f00-0.html"
+  title="Composers who set Kotzebue's texts to music"
+  width="100%"
+  height="640"
+  style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; display: block;"
+  loading="lazy">
+</iframe>
+
+[Open chart in full screen](../assets/visualizations/artifact-24ec0466-26bd-405f-82bd-1da4c6019f00-0.html){ .md-button .md-button--primary target="_blank" }
+
+The methodological takeaway compounds the complementarity argued in the next section. CKG and a domain graph such as LinkedMusic answer different questions at different scopes: the former trades semantic depth for cross-domain discoverability anchored on collections; the latter retains relation types at the cost of narrower coverage. Used together — CKG to surface Kotzebue as the Detmold fingerprint, LinkedMusic to characterise the musical settings of his texts in RISM — they reconstitute much of what either alone would leave implicit.
+
 ## CKG vs. LLMs: access to structured collection data
 
 CKG surfaces structured information about this collection that is effectively invisible to general-purpose LLMs — and, to a large extent, to web search engines as well. This is not merely a quantitative point about the amount of data; it concerns the *type* of knowledge involved. The CKG encodes specific, provenance-rich facts about individual collections — which works they hold, which persons are associated with them, how those works relate to authority records — that are not crawled, indexed, or memorised by current AI systems.
@@ -156,9 +143,3 @@ This contrast is well illustrated by an exchange with Claude Opus 4.8, prompted 
 The response is instructive on two counts. First, it confirms that the model has no direct access to the collection-level facts that CKG encodes: it cannot verify Kotzebue's actual presence in the Detmold repertoire and is reduced to historical inference and a request to "dig into" a digitisation project that CKG already indexes. Second, the response itself demonstrates what a well-informed LLM *can* contribute when CKG provides the structured anchor: contextualisation, interpretation, and the identification of meaningful patterns in data that the graph alone can hardly explain.
 
 This complementarity is arguably the most productive framing for CKG–LLM integration: the graph supplies the collection fingerprint; the model supplies the interpretive layer.
-
-## Possible next steps
-
-- Look for additional information about this specific collection in CKG (e.g. sources from RISM)
-- Create a small interactive data visualisation of information about this collection
-- Retrieve the count of publications about August von Kotzebue from DNB, to see whether there is a growing interest in this figure in recent times, as the dates of publications in GoTriple seem to suggest
